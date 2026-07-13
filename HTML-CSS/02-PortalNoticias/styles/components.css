@@ -1,0 +1,21 @@
+.tag{
+ font:var(--span);
+ text-transform:uppercase;
+
+ height:25px;
+ padding:0 8px;
+
+ background-color:var(--brand-color-dark);
+ border-radius:8px;
+
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ 
+
+}
+
+.see-all{
+  display: flex;
+  gap: 8px;
+}

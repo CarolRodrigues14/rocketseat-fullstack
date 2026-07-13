@@ -1,0 +1,54 @@
+.most-read{
+  grid-area: most-read;
+  padding-top: 12px;
+  border-top: 1px solid var(--stroke-color);
+  margin-bottom: 80px;
+  
+}
+
+.most-read header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.most-read header a img{
+  width: 20px;
+  height: 20px;
+}
+
+.most-read h2, .most-read a {
+  font: var(--p);
+}
+
+.most-read .cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.most-read article{
+  width: 292px;
+  position: relative;
+
+  
+}
+
+.most-read .tag{
+  position: absolute;
+  bottom: 200px;
+  left: 15px;
+}
+.most-read img{
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.most-read article h2{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font: var(--h2)
+}

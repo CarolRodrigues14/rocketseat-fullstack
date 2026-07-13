@@ -1,0 +1,23 @@
+#primary-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+}
+
+.menu, .search{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size:16px;
+  font-weight: 700;
+}
+#secondary-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  font: var(--p);
+  border-top: 1px solid var(--stroke-color);
+  border-bottom: 1px solid var(--stroke-color);
+}

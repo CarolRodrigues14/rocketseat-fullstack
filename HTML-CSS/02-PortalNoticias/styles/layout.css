@@ -1,0 +1,14 @@
+main{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 32px;
+
+  grid-template-areas:
+  "highlights highlights"
+  "most-read most-read"
+  "ai aside";
+
+  max-width: 1216px;
+  margin-inline: auto;
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+
+.ai{
+  grid-area: ai;
+}
+
+.ai header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--stroke-color);
+
+}
+.ai h2, .ai a{
+  font: var(--p);
+}
+
+.ai article {
+ 
+  display: flex;
+  
+  gap: 16px;
+  margin-bottom: 38px;
+}
+.ai article .tag{
+  
+  position:static;
+  align-self: flex-start;
+}
+.ai-text{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.ai article h3{
+   display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}
+.ai article p{
+   display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font: var(--p);
+
+}
+
+.ai article img{
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
