@@ -1,0 +1,7 @@
+main #container {
+  display: grid;
+
+  width: 100%;
+  max-width: 1366px;
+  margin-inline: auto;
+}

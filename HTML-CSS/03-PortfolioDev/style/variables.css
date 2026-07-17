@@ -23,7 +23,7 @@
 
     --font-family-title: "Asap", sans-serif;
     --font-family-Subtitle: "Inconsolata", monospace;
-    --font-family-Text:"Maven Pro", sans-serif;
+    --font-family-Text: "Maven Pro", sans-serif;
     
     --title-lg: 700 56px/120% var(--font-family-title);
     --title-md: 700 24px/120% var(--font-family-title);
@@ -31,8 +31,7 @@
 
     --subtitle: 400 20px/120% var(--font-family-subtitle);
     
-    --text-md: 400 16px/140% var(--font-family-text);
-    --text-sm: 400 14px/140% var(--font-family-text);
-
+    --text-md: 400 16px/140% var(--font-family-Text);
+    --text-sm: 400 14px/140% var(--font-family-Text);
    
 }
