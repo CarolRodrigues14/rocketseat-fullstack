@@ -16,7 +16,7 @@ Este repositório reúne todos os exercícios e projetos desenvolvidos durante a
 ### HTML e CSS
 
 - ✅ Layout Viagens
-- ✅ Portfólio Dev
+- ✅ [Portfólio Dev](https://carolrodrigues14.github.io/rocketseat-fullstack/HTML-CSS/03-PortfolioDev/)
 - ✅ Formulários HTML
 - ✅ Formulário de Contato
 - ✅ Responsividade
