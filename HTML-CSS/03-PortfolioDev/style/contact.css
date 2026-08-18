@@ -1,0 +1,47 @@
+#contact{
+  padding: 128px 200px;
+}
+
+.contact-list{
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.contact-card{
+  width: 400px;
+  height: 68px;
+  padding: 20px;
+  background-color: var(--gray-400);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+
+}
+
+.contact-card .info{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+
+.contact-card img{
+  width: 20px;
+  height: 20px;
+}
+
+.contact-card .seta{
+  width: 20px;
+  height: 20px;
+}
+
+.contact-card span{
+  font: var(--text-md);
+  color: var(--gray-100);
+}
+

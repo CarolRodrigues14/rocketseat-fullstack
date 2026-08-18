@@ -1,6 +1,23 @@
+.bg-image{
+  background-image: url(../assets/background/Background_Intro.png);
+  background-size:100%;
+}
+
+.bg-gray {
+  background-color: var(--gray-500);
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:8px
+
+}
+
 .subtitle{
   font:var( --subtitle);
-  color:var(--gray-200);
+  color:var(--red);
   
 }
 
@@ -24,4 +41,20 @@
 
   font:var(--text-md);
   color:var( --gray-200);
+}
+
+h2{
+  font: var(--title-md);
+  color:var(--gray-100);
+  
+}
+
+h3{
+  font: var(--title-sm);
+  color: var(--gray-100);
+}
+
+p{
+  font: var(--text-sm);
+  color: var(--gray-200);
 }

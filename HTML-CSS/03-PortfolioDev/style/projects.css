@@ -1,0 +1,43 @@
+
+#projects{
+  padding-bottom: 144px;
+}
+
+#projects header{
+  margin-bottom: 56px;
+}
+
+#project-list{
+  width: 1040px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card{
+  width: 330px;
+  height: 280px;
+  padding:12px;
+
+  border-radius: 12px;
+  background-color: var(--gray-400);
+}
+
+.project-info h3{
+  font:var(--title-sm);
+  color: var(--gray-100);
+  margin-top:24px;
+}
+
+.project-info p{
+  font:var(--text-sm);
+  color: var(--gray-200);
+  margin-top:8px;
+}
