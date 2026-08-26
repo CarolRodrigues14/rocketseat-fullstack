@@ -1,34 +1,56 @@
 #app{
   display:grid;
   grid-template-columns: 51.25% 48.75%;
-
+  grid-template-rows: minmax(0, 1fr);   /* trava a altura da linha em 1fr, sem deixar crescer com o conteúdo */
   height:100vh;
   overflow:hidden;
-
 }
 
 main{
   overflow:auto;
   padding:4rem;
-
+  min-height: 0;
     & .main-container{
-      
-      height:100vh;
-      overflow:hidden;
       max-width: 33rem;
       margin-left: auto;
-     }
+      /* removido: height: 100vh; overflow: hidden; */
+    }
 
+    & .back{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family:var(--text-md);
+      margin-bottom: 1.5rem;
+    }
 }
+
 aside{
+  height: 100vh;
   padding:4rem;
   background-color:var(--surface-secondary);
 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
     & .aside-container{
       max-width: 31rem;
-      
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
     }
 
-}
+    & header{
+      flex-shrink: 0;
+    }
 
-    
+    & img{
+      margin-top: 2rem;
+      flex: 1;
+      min-height: 0;
+      width: 100%;
+      object-fit: contain;
+    }
+}
