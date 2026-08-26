@@ -5,187 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./style/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
   <title>Formulário de Matrícula</title>
 </head>
 <body>
-  <main>
-    <section class="form-section">
-      <header>
-        <div class="return-context">
-          <a href="#"><img src="assets/arrow-left-02.svg" alt="Retornar à página anterior">
-          Voltar
-          </a>
-        </div>
-        <div class="form-title">
-          <h1>Formulário de Matrícula</h1>
-          <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-        </div>
-      </header>
-      <form action="" method="post">
-        <fieldset class="child-information">
-          <legend>Informações da criança</legend>
-          
-          <div class="field">
-            <label for="child-name">Nome Completo</label>
-            <input type="text" id="child-name" name="child-name" required>
-          </div>
+  <div id="app">
 
-          <div class="field">
-            <label for="child-birth">Data de Nascimento</label>
-            <input type="date" id="child-birth" name="child-birth" required>
-          </div>
+    <main>
+      <div class="main-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero maxime, laboriosam, nisi eos eaque vero odio at perspiciatis delectus ipsam obcaecati cum expedita voluptatibus amet suscipit fugit perferendis voluptas?</div>
+    </main>
 
-           <div class="field">
-            <label for="child-sex">Sexo</label>
-            <select id="child-sex" name="child-sex" required>
-              <option value="">Selecione</option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-            </select>
-          </div>
+    <aside>
+      <div class="aside-container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro cupiditate in ipsa earum, autem recusandae alias voluptatibus amet hic deleniti quasi maxime culpa molestias natus quae et itaque sit?</div>
+    </aside>
 
-          <div class="field">
-            <label for="medical-info">Informações Médicas</label>
-            <textarea id="medical-info" name="medical-info" rows="10" placeholder="Descreva qualquer condição de saúde ou alergia do seu filho..."></textarea>
-          </div>
-          
-          <div class="field">
-            <label for="birth-certificate">Certidão de Nascimento</label>
-            <input type="file" id="birth-certificate" name="birth-certificate" accept=".pdf,.jpg,.jpeg,.png" required>
-          </div>
-
-        </fieldset>
-
-        <fieldset class="address-information">
-          <legend>Endereço residencial</legend>
-
-          <div class="field">
-            <label for="cep">CEP</label>
-            <input type="text" id="cep" name="cep" required>
-          </div>
-
-          <div class="address-row">
-            <div class="field">
-              <label for="road">Rua</label>
-              <input type="text" id="road" name="road" required>
-            </div>
-
-            <div class="field">
-              <label for="number">Número</label>
-              <input type="number" id="number" name="number" required>
-            </div>
-          </div>
-
-          <div class="address-row">
-            <div class="field">
-              <label for="city">Cidade</label>
-              <input type="text" id="city" name="city" required>
-            </div>
-
-            <div class="field">
-              <label for="state">Estado</label>
-              <input type="text" id="state" name="state" required>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="responsible-information">
-          <legend>Informações do responsável</legend>
-          <div class="field">
-            <label for="responsible-name">Nome do responsável</label>
-            <input type="text" id="responsible-name" name="responsible-name" required>
-            <p>Principal responsável legal e contato de emergência</p>
-         </div>
-
-         <div class="field">
-            <label for="responsible-tel">Telefone</label>
-            <input type="tel" id="responsible-tel" name="responsible-tel" required>
-         </div>
-
-         <div class="field">
-            <label for="responsible-email">E-mail</label>
-            <input type="email" id="responsible-email" name="responsible-email" required>
-         </div>
-
-        </fieldset>
-
-        <fieldset class="enrollment-information">
-          <legend>Opções de matrícula</legend>
-          <p>Selecione o turno de estudo</p>
-
-          <div class="shift-row">
-            
-              <label for="morning"> 
-                <img src="assets/sun-cloud-02.svg" alt="">
-                <input type="radio" id="morning" name="shift" value="morning"><span>Manhã</span>
-              </label>
-
-              <label for="afternoon"> 
-                <img src="assets/sun-02.svg" alt="">
-                <input type="radio" id="afternoon" name="shift" value="afternoon"><span>Tarde</span>
-              </label>
-
-          </div>
-
-          <div class="sport">
-            <p>Em qual esporte você gostaria de inscrever seu filho?</p>
-
-             <label for="soccer"> 
-                <img src="assets/football.svg" alt="">
-                <input type="radio" id="soccer" name="sports" value="soccer"><span>Futebol</span>
-              </label>
-
-              <label for="basketball"> 
-                <img src="assets/basketball-02.svg" alt="">
-                <input type="radio" id="basketball" name="sports" value="basketball"><span>Basquete</span>
-              </label>
-
-              <label for="swimming"> 
-                <img src="assets/swimming.svg" alt="">
-                <input type="radio" id="swimming" name="sports" value="swimming"><span>Natação</span>
-              </label>
-
-              <label for="yoga"> 
-                <img src="assets/yoga-02.svg" alt="">
-                <input type="radio" id="yoga" name="sports" value="yoga"><span>Yoga</span>
-              </label>
-
-              <label for="volley"> 
-                <img src="assets/volleyball.svg" alt="">
-                <input type="radio" id="volley" name="sports" value="volley"><span>Vôlei</span>
-              </label>
-
-               <label for="boxing"> 
-                <img src="assets/boxing-glove-01.svg" alt="">
-                <input type="radio" id="boxing" name="sports" value="boxing"><span>Boxe</span>
-              </label>
-          </div>
-        </fieldset>
-        <div class="terms-policy">
-          <label>
-             <input type="checkbox" required>Declaro que li e concordo com os <span >Termos e Condições</span> e com a <span>Política de Privacidade</span> da escola Estrela do Amanhã.
-          </label>
-        </div>
-       
-        <div class="button">
-            <button type="submit">Salvar Respostas</button>
-            <button type="submit">Fazer Matrícula</button> 
-        </div>
-      </form>
-    </section>
-    <section class="illustration-section">
-      <div class="context-illustration">
-        <img src="assets/Frame 48095956.svg" alt="Logotipo da Escola">
-        <header>
-          <h2>Porque cada momento de aprendizado conta</h2>
-          <h3>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</h3>
-        </header>
-        <img src="assets/Illustration.svg" alt="">
-
-      </div>
-    </section>
-  </main>
+  </div>
   
 </body>
 </html>
