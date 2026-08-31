@@ -16,52 +16,58 @@
 
     <main>
       <div class="main-container">
-        <div class="back">
-          <img src="assets/arrow-left-02.svg" alt="">
-          <span>Voltar</span>
-        </div>
-        <h1>Formulário de Matrícula</h1>
-        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+          <div class="back">
+            <img src="assets/arrow-left-02.svg" alt="">
+            <span>Voltar</span>
+          </div>
+          <h1>Formulário de Matrícula</h1>
+          <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+          <form>
+            <fieldset>
+               <legend>Informações da criança</legend>
+
+                <div class="input-wrapper">
+                <label for="child-name">Nome Completo</label>
+                <input type="text" id="child-name" name="child-name" placeholder="Digite o nome completo da criança">
+               </div>
+
+                <div class="input-wrapper">
+                <label for="birth">Data de Nascimento</label>
+                <input type="date" name="birth" id="birth">
+               </div>
+              
+                <div class="select-wrapper">
+                <label for="select-gender">Sexo</label>
+                <select name="select-gender" id="select-gender">
+                  <option value="feminino">Feminino</option>
+                  <option value="masculino">Masculino</option>
+                </select>
+               </div>
+              
+               <div class="textarea-wrapper">
+                <label for="child-health">Informações médicas</label>
+                <textarea name="child-health" id="child-health" cols="30" rows="10" placeholder="A criança possue alguma condição médica que a escola precisa estar ciente? Se sim, especifique."></textarea>
+               </div>
+              
+               <div class="file-wrapper">
+                <label for="birth-file">Certidão de nascimento</label>
+                <input type="file" name="birth-file" id="birth-file">
+                <img src="assets/cloud-upload.svg" alt="">
+                <p>Clique aqui para <br> selecionar arquivos</p>
+               </div>
+              
+            </fieldset>
+
+        </form>      
       </div>
-      <form>
-        <legend>Informações da criança</legend>
-        <div class="input-wrapper">
-          <label for="child-name">Nome Completo</label>
-          <input type="text" id="child-name" name="child-name" placeholder="Digite o nome completo da criança">
-        </div>
-
-        <div class="input-wrapper">
-          <label for="birth">Data de Nascimento</label>
-          <input type="date" name="birth" id="birth">
-        </div>
-
-        <div class="input-wrapper">
-          <label for="select-gender"></label>
-          <select name="select-gender" id="select-gender">
-            <option value="feminino">Feminino</option>
-            <option value="masculino">Masculino</option>
-          </select>
-        </div>
-
-        <div class="text-area">
-          <label for="child-health">Informações médicas</label>
-          <textarea name="child-health" id="child-health"></textarea>
-        </div>
-
-        <div class="birth">
-          <label for="birth-file"></label>
-          <input type="file" name="birth-file" id="birth-file">
-        </div>
-
-      </form>      
-    </main>
-
-    <aside>
-      <div class="aside-container">
-        <header>
-          <img src="assets/Frame 48095956.svg" alt="Logo Estrelas do Amanhã">
-          <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
-          <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+      </main>
+      
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img src="assets/Frame 48095956.svg" alt="Logo Estrelas do Amanhã">
+            <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+            <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
         </header>
         <img src="assets/Illustration.svg" alt="Ilustração de uma professora com alunos se divertindo durante o aprendizado.">
       </div>

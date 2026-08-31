@@ -39,7 +39,7 @@
    --h2: 600 2.5rem/120% var(--font-family);
    --h3: 600 1.25rem/120% var(--font-family);
    --h4: 600 1.25rem/120% var(--font-family);
-   --text-md: 400 1rem/120% var(--font-family);
+   --text-md: 600 1rem/120% var(--font-family);
    --text-sm: 400 0.875rem/120% var(--font-family);
 
 }
