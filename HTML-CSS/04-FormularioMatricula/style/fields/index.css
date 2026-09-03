@@ -59,10 +59,37 @@ select{
   opacity: .5;
 }
 
-.input{
-  &[disabled]{
-    background-color: var(--surface-disabled);
-    border: 1px solid var(--stroke-default);
-    color: var(--text-primary);
-  }
+input:disabled,
+textarea:disabled,
+select:disabled{
+  background-color: var(--surface-disabled);
+  border: 1px solid var(--stroke-default);
+  color: var(--text-primary);
+  cursor: not-allowed;
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid{
+  outline: .25rem solid var(--surface-secondary);
+  border: .125rem solid var(--semantic-error);
+  outline-offset: .1px;
+}
+
+.input-wrapper > small {
+  display: inline-block;
+  margin-top: .25rem;
+  font: var(--text-sm);
+  color: var(--text-tertiary);
+}
+
+input:required + .erro {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .25rem;
+}
+
+input:not(:focus):valid + .erro{
+  display:none;
 }
