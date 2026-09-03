@@ -30,6 +30,11 @@ h2 span{
   color: var(--text-highlight);
 }
 
+input::placeholder, textarea::placeholder, select, option,input[type="date"]{
+  font:var( --text-sm);
+}
+
+
 
 img{
   max-width: 100%;
