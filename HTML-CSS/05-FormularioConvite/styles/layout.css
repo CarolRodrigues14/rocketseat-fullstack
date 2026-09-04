@@ -2,7 +2,7 @@
   display:grid;
   grid-template-columns: 25rem 35rem;
   gap: 9.375em;
-  padding: 1.25rem;
+  padding: 1.25rem ;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -11,6 +11,9 @@
 aside{
   width: 100%;
   height: 100%;
+  margin-left: auto;
+
+  border-radius: 0.625rem;
   
 }
 
@@ -18,12 +21,49 @@ aside{
   width: 100%;
   height: 35rem;
   overflow: hidden;
+  border-radius: 0.625rem;
+  position: relative;
+  z-index: 0;
 
+  
 
-  & img{
+  & .info-aside{
+    position:absolute;
+    top: 1rem;
+    left: 2rem;
+    right: 2rem;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column; 
+    
+    & h2{
+      margin-bottom: .1rem;
+    }
+
+    & img{
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: .5rem;
+    }
+  }
+
+  & >img{
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
+
+
+
+main{
+  overflow: auto;
+}
+
+.container-main{
+    background-color: var(--shape-body);
+    border-radius: 0.625rem;
+    padding: 5rem;
+  }

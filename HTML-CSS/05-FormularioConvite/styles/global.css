@@ -5,17 +5,23 @@
 }
 
 body{
+  
   background-color: var(--shape-background);
   font: var(--body-md);
   color: var(--text-body);
 
-  & .container-main{
-    background-color: var(--shape-body);
-    border-radius: 0.625rem;
-    padding: 5rem;
-  }
+  overflow: hidden;  
+}
 
-  & img{
-    width: 100%;
-  }
+
+
+
+h2{
+  font: var(--logo);
+  color: var(--pink);
+}
+
+p{
+  font: var(--body-sm);
+  color: var(--text-heading);
 }
