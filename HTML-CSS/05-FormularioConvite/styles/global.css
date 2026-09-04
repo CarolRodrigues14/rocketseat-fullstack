@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--shape-background);
+  font: var(--body-md);
+  color: var(--text-body);
+
+  & .container-main{
+    background-color: var(--shape-body);
+    border-radius: 0.625rem;
+    padding: 5rem;
+  }
+
+  & img{
+    width: 100%;
+  }
+}
