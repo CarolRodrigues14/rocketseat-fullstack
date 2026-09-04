@@ -13,7 +13,10 @@ body{
   overflow: hidden;  
 }
 
-
+h1{
+  font: var(--heading-md);
+  color: var(--text-heading);
+}
 
 
 h2{
