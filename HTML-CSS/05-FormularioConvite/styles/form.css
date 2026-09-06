@@ -1,0 +1,129 @@
+form{
+
+  & fieldset{
+  border: none;
+
+    & .legend-wrapper{
+      display:flex;
+      align-items: center;
+      gap:.75rem;
+      margin-bottom: 1.25rem;
+
+      & img{
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--input-placeholder);
+      }
+
+      & legend{
+        font: var(--heading-sm);
+        color: var(--text-heading);
+      }
+
+    
+
+    }
+  
+   }
+
+
+}
+
+.input-wrapper, .input-textarea{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+
+  & label{
+    font: var(--body-sm);
+    color: var(--input-placeholder);
+  }
+
+  & input, textarea{
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: .3125rem;
+    padding: .75rem;
+    font: var(--body-md);
+    color: var(--text-body);
+
+    &::placeholder{
+      font: var(--body-md);
+      color: var(--input-placeholder);
+    }
+
+    &[type="datetime-local"]::-webkit-calendar-picker-indicator{
+      display: none;
+    }
+  }
+}
+
+.input-wrapper-row{
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  & .input-wrapper{
+    flex: 1;
+  }
+
+
+}
+
+.option-wrapper{
+  display: flex;
+  gap: .75rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: .3125rem;
+  padding: .25rem;
+  font: var(--body-md);
+  color: var(--text-body);
+
+
+
+
+  & .options svg{
+    height: 1rem;
+    width: 1rem;
+    
+  }
+
+  & .options{
+    display: flex;
+    flex: 1;
+    position: relative;
+    
+    & input{
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+
+
+    }
+
+    & input:checked + label{
+  
+       height: 2.5rem;
+       background-color: var(--shape-background);
+       padding: .5rem;
+
+       border-radius: .25rem;
+       flex: 1;
+       & svg{
+          color:var(--brand-dark) ;
+       }   
+    }
+    
+    & label{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:.5rem;
+      padding: .5rem;
+      cursor: pointer;
+    }
+  }
+}

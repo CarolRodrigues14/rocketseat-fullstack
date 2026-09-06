@@ -65,5 +65,12 @@ main{
 .container-main{
     background-color: var(--shape-body);
     border-radius: 0.625rem;
-    padding: 5rem;
+    padding-top: 5rem;
+    
+
+    & h1{
+      margin-bottom: 2.5rem;
+    }
+
   }
+
