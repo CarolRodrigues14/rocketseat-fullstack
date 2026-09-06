@@ -19,14 +19,8 @@ form{
         font: var(--heading-sm);
         color: var(--text-heading);
       }
-
-    
-
-    }
-  
+    }  
    }
-
-
 }
 
 .input-wrapper, .input-textarea{
@@ -125,5 +119,97 @@ form{
       padding: .5rem;
       cursor: pointer;
     }
+  }
+}
+
+.options-color {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 1rem;
+
+  & .color-item {
+    position: relative;
+
+    & input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    & label {
+      display: block;
+      border-radius: 50%;
+      border: .25rem solid var(--shape-button);
+      background-color: var(--cor-opcao);
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+    }
+
+    & input:checked + label {
+      outline: 2px solid var(--brand-mid);
+      outline-offset: 2px;
+    }
+  }
+}
+
+.input-wrapper-grid {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  margin-bottom: 1.75rem;
+
+  & > label {
+    font: var(--body-sm);
+    color: var(--input-placeholder);
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .75rem;
+}
+
+.input-card {
+  position: relative;
+
+  & input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  & label {
+    display: flex;
+    flex-direction: column;
+    padding: .25rem .25rem .5rem .25rem;
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    background-color: var(--shape-button);
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  & .card-image {
+    height: 4rem;
+    border-radius: .25rem;
+    background-image: var(--bg-tema);
+    background-size: cover;
+    background-position: center;
+  }
+
+  & .card-title {
+    display: block;
+    text-align: center;
+    margin-top: .5rem;
+    color: white;
+  }
+
+  & input:checked + label {
+    border-color: var(--brand-mid);
   }
 }
