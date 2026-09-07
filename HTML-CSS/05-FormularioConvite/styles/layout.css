@@ -1,7 +1,7 @@
 .pg{
   display:grid;
-  grid-template-columns: 25rem 35rem;
-  gap: 9.375em;
+  grid-template-columns: 25rem 58rem;
+  gap: 1.25rem;
   padding: 1.25rem ;
   width: 100vw;
   height: 100vh;
@@ -65,7 +65,7 @@ main{
 .container-main{
     background-color: var(--shape-body);
     border-radius: 0.625rem;
-    padding-top: 5rem;
+    padding: 5rem 8.135rem;
     
 
     & h1{
