@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
 html {
   font-family: var(--font-family);
 }
@@ -13,14 +23,39 @@ body {
   color: var(--text-color-primary);
 }
 
+h1,
+h2,
+h3 {
+  font: var(--heading1);
+  letter-spacing: -0.04rem;
+}
+
+h2 {
+  font: var(--heading2);
+}
+
+h3 {
+  font: var(--heading3);
+}
+
+p {
+  font: var(--paragraph);
+}
+
+span {
+  font: var(--span);
+}
+
 img {
   max-width: 100%;
   display: block;
 }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role="list"]{
+  list-style: none;
 }

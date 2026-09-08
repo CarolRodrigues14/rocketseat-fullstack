@@ -14,17 +14,21 @@
   /*Typography*/
   --font-family: 'Inter', sans-serif;
 
-  --heading1-desktop: 700 4rem/120% 'Inter', sans-serif;
-  --heading2-desktop: 700 3rem/120% 'Inter', sans-serif;
-  --heading3-desktop: 700 2rem/120% 'Inter', sans-serif;
+  --heading1: 700 4rem/120% 'Inter', sans-serif;
+  --heading2: 700 3rem/120% 'Inter', sans-serif;
+  --heading3: 700 2rem/120% 'Inter', sans-serif;
 
-  --span-desktop: 600 .875rem/100% 'Inter', sans-serif;
-  --paragraph-desktop: 400 1rem/160% 'Inter', sans-serif;
+  --span: 600 .875rem/100% 'Inter', sans-serif;
+  --paragraph: 400 1rem/160% 'Inter', sans-serif;
+}
 
-  --heading1-mobile:2.5rem/120% 'Inter', sans-serif;
-  --heading2-mobile:1.5rem/120% 'Inter', sans-serif;
-  --heading3-mobile:1.25rem/120% 'Inter', sans-serif;
+@media (width <= 48em) {
+  :root {
+    --heading1: 700 2.5rem/120% 'Inter', sans-serif;
+    --heading2: 700 1.5rem/120% 'Inter', sans-serif;
+    --heading3: 700 1.25rem/120% 'Inter', sans-serif;
 
-  --span-mobile:.875rem/100% 'Inter', sans-serif;
-  --paragraph-mobile:1rem/160% 'Inter', sans-serif;
+    --span: 600 .875rem/100% 'Inter', sans-serif;
+    --paragraph: 400 1rem/160% 'Inter', sans-serif;
+  }
 }
