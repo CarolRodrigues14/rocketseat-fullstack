@@ -1,0 +1,30 @@
+:root{
+  /* Color Produto*/
+  --brand-gradient: linear-gradient(90deg, #FC4A1A 0%, #F7B733 100%);
+  --brand-color-primary:#F7B733;
+  --brand-color-secondary:#FC4A1A;
+
+  /*Color Base*/
+  --background-color:#09090B;
+  --surface-color:#18181B;
+  --stroke-color:#27272A;
+  --text-color-secondary:#A1A1AA;
+  --text-color-primary:#F4F4F5;
+
+  /*Typography*/
+  --font-family: 'Inter', sans-serif;
+
+  --heading1-desktop: 700 4rem/120% 'Inter', sans-serif;
+  --heading2-desktop: 700 3rem/120% 'Inter', sans-serif;
+  --heading3-desktop: 700 2rem/120% 'Inter', sans-serif;
+
+  --span-desktop: 600 .875rem/100% 'Inter', sans-serif;
+  --paragraph-desktop: 400 1rem/160% 'Inter', sans-serif;
+
+  --heading1-mobile:2.5rem/120% 'Inter', sans-serif;
+  --heading2-mobile:1.5rem/120% 'Inter', sans-serif;
+  --heading3-mobile:1.25rem/120% 'Inter', sans-serif;
+
+  --span-mobile:.875rem/100% 'Inter', sans-serif;
+  --paragraph-mobile:1rem/160% 'Inter', sans-serif;
+}
