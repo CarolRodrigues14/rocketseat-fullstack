@@ -21,6 +21,10 @@
   --span: 600 .875rem/100% 'Inter', sans-serif;
   --paragraph: 400 1rem/160% 'Inter', sans-serif;
 
+  --btn-sm:500 .875rem/100% 'Inter', sans-serif;
+  --btn-md:500 1rem/100% 'Inter', sans-serif;
+  --btn-lg:500 1.125rem/100% 'Inter', sans-serif;
+
   /*Variáveis de espaço*/
 
   --padding-x-lg:1rem;
